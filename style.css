@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    background-color: rgb(180, 232, 248);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.box-game{
+    display: flex;
+    justify-content:space-around;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-around;
+}
+
+.resume {
+    width: 50%;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+button{
+    font-size: 1em;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-game {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde amarelo' 'azul vermelho';
+    gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-bottom-right-radius: 100%;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-left-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-top-right-radius: 100%;
+}
+
+.green {
+    grid-area: 'verde';
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 920px) {
+    .box-game {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    
+}
